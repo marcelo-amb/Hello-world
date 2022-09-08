@@ -1,0 +1,13 @@
+// Rotina Pisca led
+// 
+int led = 13;
+// 
+void setup(){
+    pinMode(led, OUTPUT); // inicializa o pino 13 como saida 
+}
+void loop(){
+    digitalWrite(led, HIGH); // SAIDA = 1
+    delay(1000); //Aguarda 1000 milisegundos
+    digitalWrite(led, LOW); // SAIDA = 0
+    delay(1000); // Aguarda 1000 milisegundos
+}
