@@ -1,0 +1,16 @@
+int n;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(3, OUTPUT);
+}
+
+void loop(){
+  n = Serial.read();
+    if(n == '0') {
+    digitalWrite(3, LOW);
+  }
+  if(n == '1'){
+    digitalWrite(3, HIGH);
+  }
+}
